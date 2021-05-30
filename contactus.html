@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+
+     <head></head>
+     <title></title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width-device-width, initial scale-scale=1.0">
+     <link rel="icon" type="image/png" href="myImages/cityicon.png">
+     <script></script>
+     <style>
+
+     </style>
+     <link rel="stylesheet" href="myCSS/mystyles.css">
+     <link rel="stylesheet" href="myCSS/mymediaquerystyl.css">
+
+     <body>
+
+          <header>
+               
+               <h2 id="sitetitle">BAGHGDAD CITY <img src="myImages/cityicon.png" alt="City icon" height="2%" width="2%"></h2><br><br><br><br><br><br>
+               <h3 id="sitemotto">The Golden City Of Peace</h3>
+          </header>
+
+
+         <div id="menu">
+          <nav>
+
+               <a href="index.html">HOME</a>
+               <a href="aboutus.html">ABOUT US</a>
+               <a href="lifestyle.html">LIFESTYLE</a>
+               <a href="events.html">EVENTS</a>
+               <a href="contactus.html">CONTACT US</a>
+          </nav>
+         </div>
+
+
+          <div id="container">
+
+               <aside>
+
+                    <h3>THE WEEKLY, DID YOU KNOW?</h3>
+                    <div id="list">
+                    <ul>
+                         <li>75-80% of Baghdad residents are muslims</li>
+                         <li>Ancient Baghdad was a round city</li>
+                         <li>Baghdad was founded in the 8th century</li>
+                         <li>Baghdad was the largest city in the world during,Islamic golden age</li>
+                         <li>Baghdad has a population of 7.665 million</li>
+                    </ul></div><br>
+                    <h3 align="center">Baghdad</h3>
+                    <img src="myImages/banner.jpg" alt="Baghdada city img" width="97%" height="45%">
+                     
+               </aside>
+
+
+               <article>
+                   <h1>SIGN UP FOR A WEEKLY NEWSLETTER BY FILLING IN THE FOLLOWING FORM</h1><br><br>
+                <form name="register" id="register" action="thankyou.html" target="_self" autocomplete="on" method="GET" onsubmit="return ValidateFormData()" > 
+                    <fieldset>
+                        <legend>Register Visitor Details</legend>
+                        
+                       
+    
+                        <label for="firstname" class="lbl">Firstname</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Firstname" required  oninvalid="this.setCustomValidity('Please Enter Firstname Here')" oninput="this.setCustomValidity('')" value="">
+                        <br>
+    
+                        <label for="surname" class="lbl">Surname</label>
+                        <input type="text" id="surname" name="surname" placeholder="Surname" required  oninvalid="this.setCustomValidity('Please Enter Surname Here')" oninput="this.setCustomValidity('')" value="">
+                        <br>
+    
+                        <label for="gender" class="lbl">Gender</label>
+                        <select id="gender" name="gender" required  oninvalid="this.setCustomValidity('Please Select Gender Here')" oninput="this.setCustomValidity('')" >
+                            <option>Select...</option>
+                            <option value="F">Female</option>
+                            <option value="M">Male</option>
+                        </select> 
+                        <br>
+    
+                       <label for="maritalstatus" class="lbl">Marital Status</label>
+                        <label class="check"><input type="radio" id="maritalstatus" name="maritalstatus" value="M"/> : Married</label>
+                        <label class="check"><input type="radio" id="maritalstatus" name="maritalstatus" value="S" checked/> : Single</label>
+                        <label class="check"><input type="radio" id="maritalstatus" name="maritalstatus" value="D"/> : Divorced</label>
+                        <label class="check"><input type="radio" id="maritalstatus" name="maritalstatus" value="W"/> : Widowed</label>
+                        <br>
+    
+                        <label for="dob" class="lbl">DOB</label>
+                        <input type="date" id="dob" name="dob" required  oninvalid="this.setCustomValidity('Please Select Your DOB Here')" oninput="this.setCustomValidity('')" value="">
+                        <br>
+    
+                        <label for="omang" class="lbl">Omang/Passport</label>
+                        <input type="text" id="omang" name="omang" placeholder="Omang/Passport" required  oninvalid="this.setCustomValidity('Please Enter Your Omang / Passport Here')" oninput="this.setCustomValidity('')" value="">
+                        <br>
+    
+                        <label for="cellno" class="lbl">Cell Number</label>
+                        <input type="text" id="cellno" name="cellno" placeholder="Cell Number" required  oninvalid="this.setCustomValidity('Please Enter Cell Number Here')" oninput="this.setCustomValidity('')" value="">
+                        <br>
+    
+                        <label for="email" class="lbl">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required  oninvalid="this.setCustomValidity('Please Enter Email Address Here')" oninput="this.setCustomValidity('')" >
+                        <br>
+    
+                       
+                        <label for="country" class="lbl">Country</label>
+                        <input type="text" id="country" name="country" placeholder="Country" required  oninvalid="this.setCustomValidity('Please Enter Firstname Here')" oninput="this.setCustomValidity('')" value="">
+                        <br>
+    
+                      
+                        <label for="dateregistered" class="lbl">Date Registered</label>
+                        <input type="date" id="dateregistered" name="dateregistered" required  oninvalid="this.setCustomValidity('Please Enter Date Registered Here')" oninput="this.setCustomValidity('')" value="">
+                        <br>
+    
+                        <label for="timeregistered" class="lbl">Time Registered</label>
+                        <input type="time" id="timeregistered" name="timeregistered" required oninvalid="setCustomValidity('Please Enter Time Registered')" oninput="setCustomValidity('')" value=""/>
+                        <br>
+    
+                        <label for="preference" class="lbl">NewsLetter Preference</label>
+                        <select id="preference" name="preference" required  oninvalid="this.setCustomValidity('Please Select Gender Here')" oninput="this.setCustomValidity('')" >
+                            <option>Select...</option>
+                            <option value="DLY">Daily Email Newsletter</option>
+                            <option value="WLY">Weekly Email NewsLetter</option>
+                            <option value="MLY">Monthly Email NewsLetter</option>
+                            
+                        </select> 
+                        <br><br>
+    
+                        <input type="submit" id="save" name="save" value="Save"/>                     
+                        <input type="reset" id="clear" name="clear" value="Clear"/>
+                    </fieldset>
+                </form>
+               </article>
+
+          </div>     
+               <footer>
+                    <p>ALSO FIND US ON:</p>
+                    
+                    <img src="myImages/facebook icon1.png" alt="Facebook icon" title="Faceebook" width="3%" height="3%">
+                    <img src="myImages/Twitter-icon.png.png" alt="Twitter icon" title="twitter" width="3%" height="3%">
+                    <img src="myImages/Youtube icon 2.png" alt="Youtube icon" title="Youtube" width="3%" height="3%"> 
+                    <img src="myImages/Pintrest icon.jpg" alt="Youtube icon" title="Pintrest" width="3%" height="3%">
+                    <img src="myImages/Instagram icon.jpg" alt="Instagram icon" title="Instragram" width="3%" height="3%">
+                    <p>Copyright © 2021. All rights reserved</p>
+               </footer>
+         
+
+
+
+        
+     </body>
+
+</html>

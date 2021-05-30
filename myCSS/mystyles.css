@@ -1,0 +1,367 @@
+/*.... general frame styling and content....*/
+
+*{
+   box-sizing: border-box;
+
+
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+header{
+    background-image: url("../myImages/golden-mosque-baghdad.jpg");
+    width: 100%;
+    height:210px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+
+header>h2{
+    padding-top: 3px;
+    font-style:italic;
+    font-weight:bolder;
+    color: rgb(47, 47, 153);
+    margin-left: 2px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#sitemotto{
+    float: right;
+    color: rgb(214, 225, 247);
+    margin-right: 3px;
+    padding-right: 2px;
+    font-stretch: expanded;
+    font-style: italic;
+    font-weight: 500;
+}
+
+nav{
+    width: 100%;
+    height: 25px;
+    background-color: rgb(250, 234, 145);
+    padding-top: 3px;
+    
+    
+}
+
+nav>a{
+    background-color: rgb(237, 252, 245);
+    border: solid 1px;
+    margin-right: 30px;
+    border-style: hidden;
+    text-decoration-line: none;
+    
+    
+     
+}
+/*a:link{color: black;}
+a:visited{color: red;}
+a:active{color: green;}*/
+
+#container{
+    
+    width: 100%;
+    height: fit-content;
+    padding-top: none;
+    margin: 5px;
+    
+
+    
+    
+}
+
+aside{
+    background-color: rgba(199, 245, 245, 0.993);
+    width: 30%;
+    height: 600px;
+    overflow: auto;
+    float: right;
+    border: 1px ;
+    font-size: medium;
+}
+#list{
+    font-size: medium;
+}
+aside>ul>li{
+    font-style:italic;
+    font-size: medium;
+    
+}
+aside>img{
+    margin: 5px;
+}
+aside>h3{
+    text-align: center;
+}
+
+article{
+    background-color: rgba(246, 248, 248, 0.993);
+    border: solid 1px rgb(202, 247, 202);
+    width: 70%;
+    height: 600px; 
+    font-family: sans-serif;
+    overflow: auto;
+    padding-left: 10px;
+    padding-right: 9px;
+    
+}
+
+/*..... styling for mobile screen....*/
+@media only screen and (min-width: 0px) and (max-width:769px){
+    article {
+        width: 70%;
+        overflow: auto;
+
+    }
+    #all-container{
+        height: 100%;
+    }
+
+    article>p {
+        font-size: 80px;
+    }
+   aside>ul>li,ol>li{
+        font-size: 80px;
+   }
+    nav>a{
+        display: inline;
+    }
+    #menu{
+        display: inline;
+        font-size: medium;
+    }
+    
+
+    .main {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1366px){
+    article {
+        width: 70%;
+        overflow: auto;
+
+    }
+    #all-container{
+        height: 100%;
+    }
+
+    article>p {
+        font-size: 80px;
+    }
+   aside>ul>li,ol>li{
+        font-size: 70%;
+   }
+    nav>a{
+        display: inline;
+    }
+    #menu{
+        display: inline;
+        font-size: medium;
+    }
+    
+
+    .main {
+        display: flex;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+  /*  article {
+        width: 70%;
+
+    }
+
+    article>p {
+        font-size: 80px;
+    }
+   aside>li{
+        display:flex;
+    }
+     nav>a{
+        display: flex
+    }
+    
+
+    .main {
+        display: flex;
+    }*/
+}
+/*....mobile styling ends here...*/
+
+article>h1{
+    color:rgb(47, 47, 153);
+    border: 1px solid;
+    border-radius: 2px;
+    text-align: center;
+    font-style: italic;
+    text-shadow: blue;
+    
+    margin-top: 0%;
+    
+    
+    
+} 
+article>p{
+    word-spacing: normal;
+    font-size: medium;
+}
+
+
+
+article>img{
+    text-align: center;
+    width:25%;
+    align-items: center;
+    
+}
+article>a{
+    display: block;
+    margin: 10px 0px 40px 10px;
+    border: 1px solid blue;
+    width: 30%;
+    text-decoration-line: none;
+    background-color: rgb(203, 236, 234);
+    color: blue;
+}
+     
+footer{
+    background-color: rgb(250, 234, 145);
+    text-align: center;
+    height:fit-content;
+    width: 100%;
+    border-radius: 3px;
+
+}
+footer>img{
+    margin:5px;
+    padding-top: 0%;
+}
+footer>p{
+    color: rgb(110, 5, 5);
+}
+
+footer>p:first-child{
+    padding-top: 10px;
+    
+}
+footer>p:nth-child(2){
+    padding-bottom:20px
+}
+
+/*.....form styling.....*/
+
+button, input[type='submit'], input[type='reset'], input[type='button']{
+    background-color: #5ba3e0;
+    border: #2e6da4;
+    font-family: Arial, Geneva, Arial, Helvetica,  sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 2px;
+    line-height: 1.2;
+    text-decoration:none;
+}
+
+fieldset>label:not(.check){
+    color:rgb(0, 128, 128);
+    width:150px;
+    display: inline-block;
+    text-align: left;
+}
+fieldset>label:not(.check)::after{
+    content:" : ";
+    float: right;
+}
+label.check{
+    color:royalblue;
+}
+label[for="customerid"]+input[type="text"]{
+    color: red;
+    background-image:radial-gradient(yellowgreen, azure, lightcyan);
+}
+fieldset{
+    border:1px solid turquoise;
+    border-radius: 8px;
+    background-image:linear-gradient(lightcyan, peachpuff);
+    padding: 20px;
+}
+legend{
+    border:1px solid turquoise;
+    border-radius: 2px;
+    background-image: linear-gradient(lightcyan, lightyellow, lightcyan);
+    height:22px;
+    padding: 3px;
+}
+/*select desired input types leaving undesired*/
+input[type="text"],input[type="date"],input[type="time"],input[type="password"], select{
+    border:1px solid lightskyblue;
+    border-radius: 3px;
+    margin-bottom: 3px;
+    height:24px;
+    width:350px;
+}
+/*select all inputs and filter out undesired || same results as above*/
+input:not([type=checkbox]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=button]), select{
+    border:1px solid lightskyblue;
+    border-radius: 3px;
+    margin-bottom: 3px;
+    height:24px;
+    width:350px;
+}
+
+/*.cards {
+    display: flex;
+}
+
+.card {
+    position: relative;
+    width: 295px;
+    height: 295px;
+    border-radius: 2px;
+    transition: transform 0.5s linear;
+    margin-right: 10px;
+}
+
+.card h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 16px;
+
+}
+
+.card a {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+
+@media (max-width: 768px) {
+    article {
+        width: 50%;
+
+    }
+
+    .main p {
+        font-size: 80px;
+    }
+
+    .main {
+        display: flex;
+    }
+}*/
